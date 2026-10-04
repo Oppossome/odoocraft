@@ -1,0 +1,35 @@
+name: Nix shell
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+
+      - name: Package modpack
+        run: nix-shell --run "packwiz mr export -o odoocraft.mrpack"
+
+      - name: Create GitHub release
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="build-${GITHUB_RUN_NUMBER}-${GITHUB_RUN_ATTEMPT}"
+          gh release create "$tag" odoocraft.mrpack \
+            --target "$GITHUB_SHA" \
+            --title "Odoocraft build ${GITHUB_RUN_NUMBER}" \
+            --generate-notes

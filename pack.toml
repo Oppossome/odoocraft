@@ -1,0 +1,13 @@
+name = "Odoocraft"
+author = "Oppossome"
+version = "0.0.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "9fcededa50752d6a0f6f58102a580a15ad113795504777b766d7ace4d5f5c9c5"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.253"
