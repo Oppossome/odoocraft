@@ -329,6 +329,11 @@ hash = "712a69b3569a8055979de6eea262068535fe182dffb3833e53e5833e9cbf9766"
 metafile = true
 
 [[files]]
+file = "mods/leaves-be-gone.pw.toml"
+hash = "32551cd3db88210863565b772ee47679cbf1eeff163fb93b9ef84a79fa069496"
+metafile = true
+
+[[files]]
 file = "mods/lets-do-herbalbrews.pw.toml"
 hash = "4b9615192f59c2c77291e11c1fba829d94866758816424c8c3ac072d89c875bc"
 metafile = true
