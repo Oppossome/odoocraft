@@ -29,8 +29,20 @@ file = "config/jei/client/default/jei-mod-id-format.ini"
 hash = "e64349cae34367965848d7fb390dcd6a52d23c012c4711005a70084d958cee67"
 
 [[files]]
+file = "config/silentgear-common.toml"
+hash = "36c94511610f762d3c221add9bfcd398e8b8960ab9fb8cbafa6970a641fa5acf"
+
+[[files]]
+file = "config/tombstone-common.toml"
+hash = "09faad034ed9b564277bf671245a4f8d3bd20aa2a422e9ed5afceb3ea6dbeda3"
+
+[[files]]
 file = "config/waystones-common.toml"
 hash = "d2c87b8bb891d4bcfcb4c42dc411946d67e1777a5cadaa2aa090e129b8eedb25"
+
+[[files]]
+file = "dockerfile"
+hash = "a241b05f917e77238271e88ee6a979fd7fb38318191e189e20bc10322efe6c82"
 
 [[files]]
 file = "icon.png"
@@ -279,6 +291,11 @@ metafile = true
 [[files]]
 file = "mods/immersive-paintings.pw.toml"
 hash = "f4f4f93fd59e6a43e7484b44c667875cc8a5d8e5621d98b61e8944c9e0838d61"
+metafile = true
+
+[[files]]
+file = "mods/iris.pw.toml"
+hash = "db1c1e6382878b78e994dba1b9026935f8d1c5ca685c89d2437858e0a0dcab58"
 metafile = true
 
 [[files]]
