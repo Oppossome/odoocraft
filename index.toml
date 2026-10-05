@@ -549,6 +549,11 @@ hash = "593fa7b30ab016aa45be07bd6bef3a9f160ed0f24689850d60bf84995d69b843"
 metafile = true
 
 [[files]]
+file = "mods/spice-of-life-onion.pw.toml"
+hash = "6d22056366c7d5e3a8a79a8549a4b7209702d021590d8b3003de525f1bf29a63"
+metafile = true
+
+[[files]]
 file = "mods/supplementaries.pw.toml"
 hash = "25fdaaf01546f4083aa00f85b6c1c4b67434f6d068d3e1725d4437576ca34a7a"
 metafile = true
